@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "bpmn-js": "^6.3.4",
     "bpmn-js-properties-panel": "^0.33.2",
+    "camunda-bpmn-moddle": "^4.4.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0"
