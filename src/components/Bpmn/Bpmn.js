@@ -11,6 +11,7 @@ import propertiesProviderModule from 'bpmn-js-properties-panel/lib/provider/camu
 import camundaModdleDescriptor from 'camunda-bpmn-moddle/resources/camunda';
 import customTranslate from './bpmnChineseTranslate/index.js'; // 国际化中文
 import customPalette from './custom'; // 自定义节点
+import CustomModeler from './customModeler'; // 自定义工具栏
 import xml from './xml.js';
 // 左侧工具栏样式
 import 'bpmn-js/dist/assets/diagram-js.css';
@@ -26,7 +27,8 @@ class BpmnTest extends Component {
     svgContent: '', // svg内容
   }
   componentDidMount() {
-    const bpmnModeler = new BpmnModeler({
+    const bpmnModeler = new CustomModeler({
+      // const bpmnModeler = new BpmnModeler({
       container: '#canvas',
       propertiesPanel: {
         parent: '#panel'
@@ -36,7 +38,7 @@ class BpmnTest extends Component {
         propertiesProviderModule,
         propertiesPanelModule,
         customTranslate, //国际化中文
-        customPalette, // 自定义节点
+        // customPalette, // 自定义节点
       ],
       moddleExtensions: {
         camunda: camundaModdleDescriptor

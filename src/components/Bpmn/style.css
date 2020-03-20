@@ -33,8 +33,12 @@
 	display: inline-block;
 }
 
-.djs-palette .entry.custom-task {
+.djs-palette .entry.custom-fs-task {
 	cursor: pointer;
-	color: red!important;
-	background: url('https://hexo-blog-1256114407.cos.ap-shenzhen-fsi.myqcloud.com/rules.png') no-repeat 100% 100%;
+	background: url('https://hexo-blog-1256114407.cos.ap-shenzhen-fsi.myqcloud.com/rules.png') no-repeat ;
+}
+
+.djs-palette .entry.custom-fs-task-1 {
+	cursor: pointer;
+	background: url('http://v9.mingcloud.top:8080/eam/images/textEditor/2020/3/20/timg (9).jpg') no-repeat ;
 }

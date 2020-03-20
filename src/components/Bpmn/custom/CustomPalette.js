@@ -17,9 +17,9 @@ export default class CustomPalette {
   // 这个函数就是绘制palette的核心
   getPaletteEntries = (element) => {
     return {
-      'create.custom-task': {
+      'create.custom-fs-task': {
         group: 'model', // 分组名   比如tools、event、gateway、activity等等,用于分类
-        className: 'custom-task',
+        className: 'custom-fs-task',
         title: this.translate('创建自定义节点'),
         action: { // 操作
           dragstart: this.createTask,// 开始拖拽时调用的事件
