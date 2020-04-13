@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'EAM-PC';  /* project id 1247045 */
+  src: url('//at.alicdn.com/t/font_1247045_9952lmsrx6t.eot');
+  src: url('//at.alicdn.com/t/font_1247045_9952lmsrx6t.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1247045_9952lmsrx6t.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1247045_9952lmsrx6t.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1247045_9952lmsrx6t.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1247045_9952lmsrx6t.svg#EAM-PC') format('svg');
+}
+.iconfont {
+  font-family: "EAM-PC" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.iconfont:after {
+	font-size: 16px;
+}
+.fs-del-icon:after {
+	content: '\e70e';
+}
+.fs-edit-icon:after {
+	content: '\e712'
+}
+.fs-line-icon:after {
+	content: '\e733';
+}
 .container{
 	position: absolute;
 	background-color: #ffffff;
@@ -11,10 +39,10 @@
 .canvas{
 	/* width: 100%;
 	height: 100%; */
-	width: 800px;
+	width: calc(100% - 300px);
 	height: 600px;
 	border:1px solid gray;
-	margin-left: -200px;
+	/* margin-left: -200px; */
 }
 .panel{
 	position: absolute;
@@ -32,13 +60,38 @@
 	border: 1px solid gray;
 	display: inline-block;
 }
-
-.djs-palette .entry.custom-fs-task {
+.fs-task {
 	cursor: pointer;
 	background: url('https://hexo-blog-1256114407.cos.ap-shenzhen-fsi.myqcloud.com/rules.png') no-repeat ;
+	background-size: cover;
 }
-
-.djs-palette .entry.custom-fs-task-1 {
+.fs-task-1 {
 	cursor: pointer;
 	background: url('http://v9.mingcloud.top:8080/eam/images/textEditor/2020/3/20/timg (9).jpg') no-repeat ;
+	background-size: cover;
+}
+/* 自定义 contextPad 的样式 */
+.djs-context-pad .fs-task.entry:hover {
+	background-size: cover!important;
+}
+.djs-context-pad .entry:hover { /* 重新修改了 hover 之后的样式 */
+	border: 1px solid #1890ff;
+}
+.djs-palette .entry.fs-task {
+}
+
+.djs-palette .entry.fs-task-1 {
+}
+
+.tabContainer {
+
+}
+.tab {
+	position: relative;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid gray;
 }

@@ -5,14 +5,17 @@
  */
 import React, { Component } from 'react';
 import bpmnjs from 'bpmn-js';
+import { Tabs } from 'antd';
 import BpmnModeler from 'bpmn-js/lib/Modeler';
 import propertiesPanelModule from 'bpmn-js-properties-panel'
 import propertiesProviderModule from 'bpmn-js-properties-panel/lib/provider/camunda'
 import camundaModdleDescriptor from 'camunda-bpmn-moddle/resources/camunda';
 import customTranslate from './bpmnChineseTranslate/index.js'; // 国际化中文
-import customPalette from './custom'; // 自定义节点
-import CustomModeler from './customModeler'; // 自定义工具栏
-import xml from './xml.js';
+import customConfigs from './custom'; // 基于默认的配置上的自定义节点
+import customModule from './custom';
+import CustomModeler from './customModeler'; // 完全自定义配置
+// import xml from './xml.js';
+import { xmlStr } from '../../mock/xmlStr';
 // 左侧工具栏样式
 import 'bpmn-js/dist/assets/diagram-js.css';
 import 'bpmn-js/dist/assets/bpmn-font/css/bpmn.css';
@@ -21,31 +24,36 @@ import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css';
 import 'bpmn-js-properties-panel/dist/assets/bpmn-js-properties-panel.css' // 右边属性栏样式
 import './style.css';
 
+console.log('customConfigs aaa', customConfigs)
+const { TabPane } = Tabs;
 class BpmnTest extends Component {
   state = {
     xmlContent: '', // xml内容
     svgContent: '', // svg内容
+    activeTabKey: 'draw',
   }
   componentDidMount() {
-    const bpmnModeler = new CustomModeler({
+    const { __init__, ...restProps } = customConfigs;
+    const bpmnModeler = new CustomModeler({ // 自定义
       // const bpmnModeler = new BpmnModeler({
       container: '#canvas',
       propertiesPanel: {
         parent: '#panel'
       },
       additionalModules: [
+        restProps,
         // 右边的属性栏
         propertiesProviderModule,
         propertiesPanelModule,
         customTranslate, //国际化中文
-        // customPalette, // 自定义节点
+        customModule,
       ],
-      moddleExtensions: {
-        camunda: camundaModdleDescriptor
-      }
+      // moddleExtensions: {
+      //   camunda: camundaModdleDescriptor
+      // }
     });
     this.bpmnModeler = bpmnModeler;
-    bpmnModeler.importXML(xml, (err) => {
+    bpmnModeler.importXML(xmlStr, (err) => {
       if (err) {
         console.log(err, 'aaa err')
       } else {
@@ -66,7 +74,7 @@ class BpmnTest extends Component {
     // 保存为xml的api为：saveXML；保存为svg的api为：saveSVG；
     this.bpmnModeler.on('commandStack.changed', () => {
       this.bpmnModeler.saveXML({ format: true }, (err, xml) => {
-        // console.log('aaa new xml', xml);
+        console.log('aaa new xml', xml);
         this.setState({ xmlContent: xml })
       });
     })
@@ -149,31 +157,27 @@ class BpmnTest extends Component {
   //     link.download = name
   //   }
   // }
-
+  onChangeTab = (activeTabKey) => {
+    this.setState({ activeTabKey })
+  }
   render() {
-    const { xmlContent, svgContent } = this.state;
+    const { xmlContent, svgContent, activeTabKey } = this.state;
     return (
-      <div className="container">
-        <div id="canvas" className="canvas"></div>
-        <div id="panel" className="panel"></div>
-        <div className="btnWrap">
-          <a
-            className="saveBtn"
-            href={`data:application/bpmn20-xml;charset=UTF-8,${encodeURIComponent(xmlContent)}`}
-            download='content.xml'
-          >
-            保存为bpmn文件
-          </a>
-          <a
-            className="saveBtn"
-            href={`data:application/bpmn20-xml;charset=UTF-8,${encodeURIComponent(svgContent)}`}
-            download='content.svg'
-            onClick={this.saveAsSvg}>
-            保存为svg文件
-          </a>
-
-        </div>
-      </div>
+      <Tabs
+        onChange={this.onChangeTab}
+        activeKey={activeTabKey}
+      >
+        <TabPane tab="绘制" key="draw">
+          <div id="canvas" className="canvas"></div>
+          <div id="panel" className="panel"></div>
+        </TabPane>
+        <TabPane tab="XML" key="xml">
+          {xmlContent}
+        </TabPane>
+        <TabPane tab="SVG" key="svg">
+          {svgContent}
+        </TabPane>
+      </Tabs>
     )
   }
 }

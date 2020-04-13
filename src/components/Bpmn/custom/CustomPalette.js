@@ -1,7 +1,7 @@
 /*
  * @Author: Fus
  * @Date:   2020-03-20 09:07:41
- * @Desc: 自定义节点
+ * @Desc: 在默认的节点基础上修改自定义节点
  */
 import React, { Component } from 'react';
 
@@ -17,9 +17,9 @@ export default class CustomPalette {
   // 这个函数就是绘制palette的核心
   getPaletteEntries = (element) => {
     return {
-      'create.custom-fs-task': {
+      'create.fs-task': {
         group: 'model', // 分组名   比如tools、event、gateway、activity等等,用于分类
-        className: 'custom-fs-task',
+        className: 'fs-task',
         title: this.translate('创建自定义节点'),
         action: { // 操作
           dragstart: this.createTask,// 开始拖拽时调用的事件
