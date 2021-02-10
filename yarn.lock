@@ -1713,9 +1713,9 @@ acorn-walk@^6.0.1:
   integrity sha512-7evsyfH1cLOCdAzZAd43Cic04yKydNx0cF+7tiA19p1XnLLPU4dpCQOqpjqwokFe//vS0QqfqqjCS2JkiIs0cA==
 
 acorn@^5.5.3:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
-  integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
+  integrity sha512-1D++VG7BhrtvQpNbBzovKNc1FLGGEE/oGe7b9xJm/RFHMBeUaUGpluV9RLjZa47YFdPcDAenEYuq9pQPcMdLJg==
 
 acorn@^6.0.1, acorn@^6.0.4, acorn@^6.2.1:
   version "6.4.0"
@@ -2398,13 +2398,13 @@ bpmn-js-properties-panel@^0.33.2:
     scroll-tabs "^1.0.1"
     selection-update "^0.1.2"
 
-bpmn-js@^6.3.4:
-  version "6.4.0"
-  resolved "https://registry.npm.taobao.org/bpmn-js/download/bpmn-js-6.4.0.tgz#2dd262132328dabb50e5b48bdfc66dbc853103d2"
-  integrity sha1-LdJiEyMo2rtQ5bSL38ZtvIUxA9I=
+bpmn-js@^6.0.7:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/bpmn-js/-/bpmn-js-6.4.1.tgz#6d6115941e7634cb0b3d097545ca538d05a0bc54"
+  integrity sha512-t/AdiAuZLJyVXkN2XptPyf1IHBD2yM1UvumVBtDnLhMHHfGaV5bdK7vTP9AZluI3cH9VlA39iyk4G0dCmIIa2g==
   dependencies:
     bpmn-font "^0.9.3"
-    bpmn-moddle "^6.0.2"
+    bpmn-moddle "^6.0.4"
     css.escape "^1.5.1"
     diagram-js "^6.4.1"
     diagram-js-direct-editing "^1.6.1"
@@ -2415,14 +2415,14 @@ bpmn-js@^6.3.4:
     object-refs "^0.3.0"
     tiny-svg "^2.2.1"
 
-bpmn-moddle@^6.0.2:
-  version "6.0.3"
-  resolved "https://registry.npm.taobao.org/bpmn-moddle/download/bpmn-moddle-6.0.3.tgz#4c93ae34a951ebe99dce928260e3eb4685688fdf"
-  integrity sha1-TJOuNKlR6+mdzpKCYOPrRoVoj98=
+bpmn-moddle@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/bpmn-moddle/-/bpmn-moddle-6.0.4.tgz#5a1ce3aa28f17aa3beadb9932f3d683b510ef2e9"
+  integrity sha512-8EkbAuIhWajEdLkWfkpV/91/AVGX/bexc+iA9WRuivdU6PKqhSXAOo052fSOmp3gBPZIv8hkz56f8GL0+eoWcw==
   dependencies:
     min-dash "^3.0.0"
     moddle "^5.0.1"
-    moddle-xml "^8.0.3"
+    moddle-xml "^8.0.5"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -6944,14 +6944,14 @@ mkdirp@0.5.1, mkdirp@^0.5.1, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-moddle-xml@^8.0.3:
-  version "8.0.3"
-  resolved "https://registry.npm.taobao.org/moddle-xml/download/moddle-xml-8.0.3.tgz#9438226daf7216f6910a63da217c7a549ac95ae6"
-  integrity sha1-lDgiba9yFvaRCmPaIXx6VJrJWuY=
+moddle-xml@^8.0.5:
+  version "8.0.5"
+  resolved "https://registry.yarnpkg.com/moddle-xml/-/moddle-xml-8.0.5.tgz#69cb7bf3130dc1204a3198b711153002c0e7f18f"
+  integrity sha512-c7foDi7pUTHIL00UBu5jEM/oIgasuoueVIrBa0Tg1EvWdDgdGprw2nyDPuEzVafthzKGd0lxFoO+U1ENcldrCQ==
   dependencies:
     min-dash "^3.0.0"
     moddle "^5.0.1"
-    saxen "^8.1.1"
+    saxen "^8.1.2"
 
 moddle@^5.0.1:
   version "5.0.1"
@@ -9645,10 +9645,10 @@ sax@^1.2.4, sax@~1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-saxen@^8.1.1:
-  version "8.1.1"
-  resolved "https://registry.npm.taobao.org/saxen/download/saxen-8.1.1.tgz#db4f5d8fbd1d4b556335f2e2608743bed4004565"
-  integrity sha1-209dj70dS1VjNfLiYIdDvtQARWU=
+saxen@^8.1.2:
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/saxen/-/saxen-8.1.2.tgz#e677b32afe93667c9d939d3f3de02e09df108e54"
+  integrity sha512-xUOiiFbc3Ow7p8KMxwsGICPx46ZQvy3+qfNVhrkwfz3Vvq45eGt98Ft5IQaA1R/7Tb5B5MKh9fUR9x3c3nDTxw==
 
 saxes@^3.1.9:
   version "3.1.11"
