@@ -2381,11 +2381,6 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bpmn-font@^0.9.3:
-  version "0.9.3"
-  resolved "https://registry.npm.taobao.org/bpmn-font/download/bpmn-font-0.9.3.tgz#03c2c906dbd30653e5b1f113d92c78cab6710df4"
-  integrity sha1-A8LJBtvTBlPlsfET2Sx4yrZxDfQ=
-
 bpmn-js-properties-panel@^0.33.2:
   version "0.33.2"
   resolved "https://registry.npm.taobao.org/bpmn-js-properties-panel/download/bpmn-js-properties-panel-0.33.2.tgz#b96f6b9bf95c54089000fe2aad02ced96e08f91f"
@@ -2398,15 +2393,14 @@ bpmn-js-properties-panel@^0.33.2:
     scroll-tabs "^1.0.1"
     selection-update "^0.1.2"
 
-bpmn-js@^6.3.4:
-  version "6.4.0"
-  resolved "https://registry.npm.taobao.org/bpmn-js/download/bpmn-js-6.4.0.tgz#2dd262132328dabb50e5b48bdfc66dbc853103d2"
-  integrity sha1-LdJiEyMo2rtQ5bSL38ZtvIUxA9I=
+bpmn-js@^6.0.7:
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/bpmn-js/-/bpmn-js-6.5.1.tgz#d0eecba2afeeb430a1c609137e9ef92520a47037"
+  integrity sha512-qmxY+vaFndUa4e65WMjSMUVPDz0qAc79JHODJoLXJBklSS5XatUfqzKR6UGfeT7s0IGA7qje1afMVKMz4YJsEw==
   dependencies:
-    bpmn-font "^0.9.3"
-    bpmn-moddle "^6.0.2"
+    bpmn-moddle "^6.0.6"
     css.escape "^1.5.1"
-    diagram-js "^6.4.1"
+    diagram-js "^6.6.1"
     diagram-js-direct-editing "^1.6.1"
     ids "^1.0.0"
     inherits "^2.0.1"
@@ -2415,14 +2409,14 @@ bpmn-js@^6.3.4:
     object-refs "^0.3.0"
     tiny-svg "^2.2.1"
 
-bpmn-moddle@^6.0.2:
-  version "6.0.3"
-  resolved "https://registry.npm.taobao.org/bpmn-moddle/download/bpmn-moddle-6.0.3.tgz#4c93ae34a951ebe99dce928260e3eb4685688fdf"
-  integrity sha1-TJOuNKlR6+mdzpKCYOPrRoVoj98=
+bpmn-moddle@^6.0.6:
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/bpmn-moddle/-/bpmn-moddle-6.0.7.tgz#416dfbd0d6e8923711c919d015a7345f7abac20b"
+  integrity sha512-MD649c7/I7+AKl3OGLs8ed8guzKuIRIJhOvLeVBSyCHtd41iB8ZRi+NL2UeC8pNgpqcjMsZG3ye++x3fh6MQ+g==
   dependencies:
     min-dash "^3.0.0"
     moddle "^5.0.1"
-    moddle-xml "^8.0.3"
+    moddle-xml "^8.0.8"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -3710,10 +3704,10 @@ diagram-js-direct-editing@^1.6.1:
     min-dash "^3.0.0"
     min-dom "^3.0.0"
 
-diagram-js@^6.4.1:
-  version "6.5.0"
-  resolved "https://registry.npm.taobao.org/diagram-js/download/diagram-js-6.5.0.tgz#9c95275c4e4783aeca4d106760f620603e1b1ecd"
-  integrity sha1-nJUnXE5Hg67KTRBnYPYgYD4bHs0=
+diagram-js@^6.6.1:
+  version "6.8.2"
+  resolved "https://registry.yarnpkg.com/diagram-js/-/diagram-js-6.8.2.tgz#d3c37915c62c0cc5d95bc533098c8a35b38e67be"
+  integrity sha512-5EKYHjW2mmGsn9/jSenSkm8cScK5sO9eETBRQNIIzgZjxBDJn6eX964L2d7/vrAW9SeuijGUsztL9+NUinSsNg==
   dependencies:
     css.escape "^1.5.1"
     didi "^4.0.0"
@@ -6944,14 +6938,14 @@ mkdirp@0.5.1, mkdirp@^0.5.1, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-moddle-xml@^8.0.3:
-  version "8.0.3"
-  resolved "https://registry.npm.taobao.org/moddle-xml/download/moddle-xml-8.0.3.tgz#9438226daf7216f6910a63da217c7a549ac95ae6"
-  integrity sha1-lDgiba9yFvaRCmPaIXx6VJrJWuY=
+moddle-xml@^8.0.8:
+  version "8.0.8"
+  resolved "https://registry.yarnpkg.com/moddle-xml/-/moddle-xml-8.0.8.tgz#f14193394be8e1c5f6d1c0f892dee57523d41416"
+  integrity sha512-JzW8wUCH7Qze7eh0T8A1exi7QJg6hRgq+uw8goHNP5Q7pWTGrLj83S+NgA/94M2I0JmqnK9hw3sCbyiKVOjc4Q==
   dependencies:
     min-dash "^3.0.0"
     moddle "^5.0.1"
-    saxen "^8.1.1"
+    saxen "^8.1.2"
 
 moddle@^5.0.1:
   version "5.0.1"
@@ -8638,9 +8632,9 @@ querystring@0.2.0:
   integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
 
 querystringify@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
-  integrity sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
+  integrity sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
 
 raf@^3.4.0, raf@^3.4.1:
   version "3.4.1"
@@ -9645,10 +9639,10 @@ sax@^1.2.4, sax@~1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-saxen@^8.1.1:
-  version "8.1.1"
-  resolved "https://registry.npm.taobao.org/saxen/download/saxen-8.1.1.tgz#db4f5d8fbd1d4b556335f2e2608743bed4004565"
-  integrity sha1-209dj70dS1VjNfLiYIdDvtQARWU=
+saxen@^8.1.2:
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/saxen/-/saxen-8.1.2.tgz#e677b32afe93667c9d939d3f3de02e09df108e54"
+  integrity sha512-xUOiiFbc3Ow7p8KMxwsGICPx46ZQvy3+qfNVhrkwfz3Vvq45eGt98Ft5IQaA1R/7Tb5B5MKh9fUR9x3c3nDTxw==
 
 saxes@^3.1.9:
   version "3.1.11"
@@ -10768,9 +10762,9 @@ url-loader@2.3.0:
     schema-utils "^2.5.0"
 
 url-parse@^1.4.3:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
-  integrity sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.3.tgz#71c1303d38fb6639ade183c2992c8cc0686df862"
+  integrity sha512-IIORyIQD9rvj0A4CLWsHkBBJuNqWpFQe224b6j9t/ABmquIS0qDU2pY6kl6AuOrL5OkCXHMCFNe1jBcuAggjvQ==
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
